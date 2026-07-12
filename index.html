@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uunchai Analytics Dashboard</title>
-    <!-- Core Styling -->
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Header Navigation -->
+
     <header>
         <div class="container nav-wrapper">
             <a href="#" class="logo">
@@ -21,9 +21,12 @@
                 <ul class="nav-links">
                     <li><a href="#hero">Overview</a></li>
                     <li><a href="#dashboard">Dashboard</a></li>
-                    <li><a href="#" onclick="showToast('Documentation is currently offline for the demo.', 'info'); return false;">Docs</a></li>
+                    <li><a href="#"
+                            onclick="showToast('Documentation is currently offline for the demo.', 'info'); return false;">Docs</a>
+                    </li>
                     <li>
-                        <a href="#dashboard" class="btn btn-accent" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Live App</a>
+                        <a href="#dashboard" class="btn btn-accent"
+                            style="padding: 0.5rem 1rem; font-size: 0.85rem;">Live App</a>
                     </li>
                 </ul>
             </nav>
@@ -36,11 +39,13 @@
             <div class="hero-tagline">Platform Demo</div>
             <h1 class="hero-title">Unified Platform for <span>Modern Analytics</span></h1>
             <p class="hero-desc">
-                An ultra-responsive dashboard built to monitor product performance, user engagement, and conversation trends in real-time. Try filtering, sorting, adding, or deleting users below.
+                An ultra-responsive dashboard built to monitor product performance, user engagement, and conversation
+                trends in real-time. Try filtering, sorting, adding, or deleting users below.
             </p>
             <div class="hero-ctas">
                 <a href="#dashboard" class="btn btn-primary">Launch Dashboard</a>
-                <button class="btn btn-secondary" onclick="showToast('GitHub repository access is restricted for the demo.', 'info')">
+                <button class="btn btn-secondary"
+                    onclick="showToast('GitHub repository access is restricted for the demo.', 'info')">
                     View Repository
                 </button>
             </div>
@@ -55,7 +60,13 @@
                     <div class="kpi-header">
                         <span class="kpi-title">Total Users</span>
                         <div class="kpi-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
                         </div>
                     </div>
                     <div class="kpi-value" id="total-users-count">-</div>
@@ -68,7 +79,10 @@
                     <div class="kpi-header">
                         <span class="kpi-title">Active Sessions</span>
                         <div class="kpi-icon" style="color: var(--accent-cyan);">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
                         </div>
                     </div>
                     <div class="kpi-value" id="active-sessions-count">-</div>
@@ -81,12 +95,17 @@
                     <div class="kpi-header">
                         <span class="kpi-title">Avg Conversion</span>
                         <div class="kpi-icon" style="color: var(--color-active);">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                                <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                            </svg>
                         </div>
                     </div>
                     <div class="kpi-value" id="avg-conversion-rate">-</div>
                     <div class="kpi-trend trend-down">
-                        <span style="color: var(--color-pending);">→ Stable</span> <span style="color: var(--text-muted);">average conversion</span>
+                        <span style="color: var(--color-pending);">→ Stable</span> <span
+                            style="color: var(--text-muted);">average conversion</span>
                     </div>
                 </div>
             </div>
@@ -101,8 +120,13 @@
                     <div class="dashboard-controls">
                         <!-- Search Box -->
                         <div class="search-wrapper">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                            <input type="text" id="search-input" class="search-input" placeholder="Search by name, email or role...">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <input type="text" id="search-input" class="search-input"
+                                placeholder="Search by name, email or role...">
                         </div>
                         <!-- Status Filter -->
                         <select id="status-filter" class="filter-select">
@@ -131,8 +155,10 @@
                                 <th class="sortable" data-col="name" onclick="sortTable('name')">Name & Email</th>
                                 <th class="sortable" data-col="role" onclick="sortTable('role')">Role</th>
                                 <th class="sortable" data-col="status" onclick="sortTable('status')">Status</th>
-                                <th class="sortable text-right" data-col="conversionRate" onclick="sortTable('conversionRate')">Conversion Rate</th>
-                                <th class="sortable text-right" data-col="sessionDuration" onclick="sortTable('sessionDuration')">Session Duration</th>
+                                <th class="sortable text-right" data-col="conversionRate"
+                                    onclick="sortTable('conversionRate')">Conversion Rate</th>
+                                <th class="sortable text-right" data-col="sessionDuration"
+                                    onclick="sortTable('sessionDuration')">Session Duration</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -151,7 +177,8 @@
         <ul class="footer-links">
             <li><a href="#" onclick="showToast('Demo Terms of Service applied.', 'info'); return false;">Terms</a></li>
             <li><a href="#" onclick="showToast('Demo Privacy Policy applied.', 'info'); return false;">Privacy</a></li>
-            <li><a href="#" onclick="showToast('Support is offline for this demo.', 'info'); return false;">Support</a></li>
+            <li><a href="#" onclick="showToast('Support is offline for this demo.', 'info'); return false;">Support</a>
+            </li>
         </ul>
     </footer>
 
